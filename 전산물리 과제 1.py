@@ -39,7 +39,7 @@ B = np.array([[1,0,0,0],
 b = np.array([1,0,2,2])
 
 sol = np.linalg.solve(B,b) # linalg.solve(A,b)는 Bx = b를 만족하는 x를 sol로 받습니다.
-print('sol:',sol) #sol을 출력해줍니다. sol:[1,2,0,4]가 출력됩니다.
+print('sol:',sol) #sol을 출력해줍니다. sol:[1,2,0,2]가 출력됩니다.
 A = np.array([[1,2],
               [0,2]]) # A는 다음과 같이 구할 수 있습니다. 
 
