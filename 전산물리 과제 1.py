@@ -26,7 +26,7 @@ plt.show()
 # A를 ex에 연산 한 결과가 백터로 표현 가능하므로 A는 2*2행렬이다.
 # A = array([[a,b],   로 두고, ㄱ,ㄴ의 식을 써주면 다음과 같다.
 #            [c,d]])
-# a + 0*b + 0*c + 0*d = 1
+# 1*a + 0*b + 0*c + 0*d = 1
 # 0*a + 0*b + 1*c + 0*d = 0
 # 0*a + 1*b + 0*c + 0*d = 2
 # 0*a + 0*b + 0*c + 1*d = 2
@@ -38,7 +38,7 @@ B = np.array([[1,0,0,0],
 
 b = np.array([1,0,2,2])
 
-sol = np.linalg.solve(A,b) # linalg.solve(A,b)는 Ax = b를 만족하는 x를 sol로 받습니다.
+sol = np.linalg.solve(B,b) # linalg.solve(A,b)는 Ax = b를 만족하는 x를 sol로 받습니다.
 print('sol:',sol) #sol을 출력해줍니다. sol:[1,2,0,4]가 출력됩니다.
 A = np.array([[1,2],
               [0,2]]) # A는 다음과 같이 구할 수 있습니다. 
@@ -53,3 +53,4 @@ b = np.array([40,92])
 
 sol = np.linalg.solve(A,b) # linalg.solve(A,b)는 Ax = b를 만족하는 x를 sol로 받습니다.
 print('sol:',sol) #sol을 출력해줍니다.
+#출력되는 sol은 [6,34] 입니다.
